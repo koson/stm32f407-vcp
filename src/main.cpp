@@ -22,6 +22,8 @@ void setup() {
 
 }
 
+int delay_time = 80;
+
 void loop() {
   // put your main code here, to run repeatedly:
   // USB.println("Hello World.\n");
@@ -29,21 +31,21 @@ void loop() {
   // Turn off the GREEN LED, turn on the ORANGE LED and wait for 1000ms.
   digitalWrite(PD12, LOW);
   digitalWrite(PD13, HIGH);
-  delay(100);
+  delay(delay_time);
   
   // Turn off the ORANGE LED, turn on the RED LED and wait for 1000ms.
   digitalWrite(PD13, LOW);
   digitalWrite(PD14, HIGH);
-  delay(100);
+  delay(delay_time);
 
   // Turn off the RED LED, turn on the BLUE LED and wait for 1000ms.
   digitalWrite(PD14, LOW);
   digitalWrite(PD15, HIGH);
-  delay(100);
+  delay(delay_time);
 
   // Turn off the BLUE LED, turn on the GREEN LED and wait for 1000ms.
   digitalWrite(PD15, LOW);
   digitalWrite(PD12, HIGH);
-  delay(100);
+  delay(delay_time);
 
 }
